@@ -32,7 +32,7 @@ Or, specifying unique rules respectively:
       font-size        : 1.5rem;
       background-color : #EFEFEF;
       color            : #000;
-      
+            
       .phones({
         color : red;
       }, portrait);
@@ -40,7 +40,7 @@ Or, specifying unique rules respectively:
       .tablets({
         color : blue;
       }, portrait);
-      
+
     }
 
 
