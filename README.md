@@ -45,7 +45,7 @@ Or, specifying unique rules respectively:
 
 
 ## Mixins Included
-The mixins are inclusively hierarchical, meaning `.phones()` will pull leverage rules from `.iPhones()`, which will 
+The mixins are inclusively hierarchical, meaning `.phones()` will leverage rules from `.iPhones()`, which will 
 leverage rules from `.iPhone4()`, `.iPhone5()`, `.iPhone6()`, and `.iPhone6Plus()`, for example. Due to the way the 
 rules were written, some targeting overlap will occur. 
 
