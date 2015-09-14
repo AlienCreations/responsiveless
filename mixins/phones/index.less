@@ -1,0 +1,15 @@
+@import 'galaxy/index';
+@import 'htc/index';
+@import 'iphones/index';
+
+.phones(@rules) {
+  .galaxyPhones(@rules);
+  .htcPhones(@rules);
+  .iPhones(@rules);
+}
+
+.phones(@rules, @orientation) {
+  .galaxyPhones(@rules, @orientation);
+  .htcPhones(@rules, @orientation);
+  .iPhones(@rules, @orientation);
+}

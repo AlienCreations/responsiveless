@@ -1,0 +1,27 @@
+{
+  "name"        : "responsiveless",
+  "version"     : "1.0.0",
+  "homepage"    : "https://github.com/aliencreations/responsiveless",
+  "authors"     : [
+    "Sean Cannon <alienwebguy@gmail.com>"
+  ],
+  "description" : "Media query mixins for LESS",
+  "main"        : [
+    "index.less"
+  ],
+  "keywords"    : [
+    "responsive",
+    "less",
+    "media",
+    "query",
+    "mixin"
+  ],
+  "license"     : "MIT",
+  "ignore"      : [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

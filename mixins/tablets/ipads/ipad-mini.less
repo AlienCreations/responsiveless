@@ -1,0 +1,38 @@
+/* ----------- iPad mini ----------- */
+.iPadMini(@rules) {
+
+  /* Portrait and Landscape */
+  @media only screen
+  and (min-device-width : 768px)
+  and (max-device-width : 1024px)
+  and (-webkit-min-device-pixel-ratio : 1) {
+    @rules();
+  }
+
+}
+
+.iPadMini(@rules, @orientation) when (@orientation = portrait) {
+
+  /* Portrait */
+  @media only screen
+  and (min-device-width : 768px)
+  and (max-device-width : 1024px)
+  and (orientation : portrait)
+  and (-webkit-min-device-pixel-ratio : 1) {
+    @rules();
+  }
+
+}
+
+.iPadMini(@rules, @orientation) when (@orientation = landscape) {
+
+  /* Landscape */
+  @media only screen
+  and (min-device-width : 768px)
+  and (max-device-width : 1024px)
+  and (orientation : landscape)
+  and (-webkit-min-device-pixel-ratio : 1) {
+    @rules();
+  }
+
+}

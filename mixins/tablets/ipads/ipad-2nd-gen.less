@@ -1,0 +1,54 @@
+/* ----------- iPad 3 and 4 ----------- */
+.iPad2ndGen(@rules) {
+
+  /* Portrait and Landscape */
+  @media only screen
+  and (min-device-width : 768px)
+  and (max-device-width : 1024px)
+  and (-webkit-min-device-pixel-ratio : 2) {
+    @rules();
+  }
+
+}
+
+.iPad2ndGen(@rules, @orientation) when (@orientation = portrait) {
+
+  /* Portrait */
+  @media only screen
+  and (min-device-width : 768px)
+  and (max-device-width : 1024px)
+  and (orientation : portrait)
+  and (-webkit-min-device-pixel-ratio : 2) {
+    @rules();
+  }
+
+}
+
+.iPad2ndGen(@rules, @orientation) when (@orientation = landscape) {
+
+  /* Landscape */
+  @media only screen
+  and (min-device-width : 768px)
+  and (max-device-width : 1024px)
+  and (orientation : landscape)
+  and (-webkit-min-device-pixel-ratio : 2) {
+    @rules();
+  }
+
+}
+
+.iPad3(@rules) {
+  .iPad2ndGen(@rules);
+}
+
+.iPad3(@rules, @orientation) {
+  .iPad2ndGen(@rules, @orientation);
+}
+
+.iPad4(@rules) {
+  .iPad2ndGen(@rules);
+}
+
+.iPad4(@rules, @orientation) {
+  .iPad2ndGen(@rules, @orientation);
+}

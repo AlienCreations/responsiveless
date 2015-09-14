@@ -1,0 +1,18 @@
+@import 'iphone4';
+@import 'iphone5';
+@import 'iphone6';
+@import 'iphone6-plus';
+
+.iPhones(@rules) {
+  .iPhone4(@rules);
+  .iPhone5(@rules);
+  .iPhone6(@rules);
+  .iPhone6Plus(@rules);
+}
+
+.iPhones(@rules, @orientation) {
+  .iPhone4(@rules, @orientation);
+  .iPhone5(@rules, @orientation);
+  .iPhone6(@rules, @orientation);
+  .iPhone6Plus(@rules, @orientation);
+}

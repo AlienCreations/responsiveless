@@ -1,0 +1,38 @@
+/* ----------- iPhone 5 and 5S ----------- */
+.iPhone5(@rules) {
+
+  /* Portrait and Landscape */
+  @media only screen
+  and (min-device-width : 320px)
+  and (max-device-width : 568px)
+  and (-webkit-min-device-pixel-ratio : 2) {
+    @rules();
+  }
+
+}
+
+.iPhone5(@rules, @orientation) when (@orientation = portrait) {
+
+  /* Portrait */
+  @media only screen
+  and (min-device-width : 320px)
+  and (max-device-width : 568px)
+  and (-webkit-min-device-pixel-ratio : 2)
+  and (orientation : portrait) {
+    @rules();
+  }
+
+}
+
+.iPhone5(@rules, @orientation) when (@orientation = landscape) {
+
+  /* Landscape */
+  @media only screen
+  and (min-device-width : 320px)
+  and (max-device-width : 568px)
+  and (-webkit-min-device-pixel-ratio : 2)
+  and (orientation : landscape) {
+    @rules();
+  }
+
+}

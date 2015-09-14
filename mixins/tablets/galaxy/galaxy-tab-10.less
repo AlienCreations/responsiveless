@@ -1,0 +1,30 @@
+/* ----------- Galaxy Tab 10.1 ----------- */
+.galaxyTab10(@rules) {
+
+  /* Portrait and Landscape */
+  @media (min-device-width : 800px)
+  and (max-device-width : 1280px) {
+    @rules();
+  }
+
+}
+
+.galaxyTab10(@rules, @orientation) when (@orientation = portrait) {
+
+  /* Portrait */
+  @media (max-device-width : 800px)
+  and (orientation : portrait) {
+    @rules();
+  }
+
+}
+
+.galaxyTab10(@rules, @orientation) when (@orientation = landscape) {
+
+  /* Landscape */
+  @media (max-device-width : 1280px)
+  and (orientation : landscape) {
+    @rules();
+  }
+
+}

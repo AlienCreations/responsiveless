@@ -1,0 +1,38 @@
+/* ----------- Kindle Fire HD 7" ----------- */
+.kindleFire7Inch(@rules) {
+
+  /* Portrait and Landscape */
+  @media only screen
+  and (min-device-width : 800px)
+  and (max-device-width : 1280px)
+  and (-webkit-min-device-pixel-ratio : 1.5) {
+    @rules();
+  }
+
+}
+
+.kindleFire7Inch(@rules, @orientation) when (@orientation = portrait) {
+
+  /* Portrait */
+  @media only screen
+  and (min-device-width : 800px)
+  and (max-device-width : 1280px)
+  and (-webkit-min-device-pixel-ratio : 1.5)
+  and (orientation : portrait) {
+    @rules();
+  }
+
+}
+
+.kindleFire7Inch(@rules, @orientation) when (@orientation = landscape) {
+
+  /* Landscape */
+  @media only screen
+  and (min-device-width : 800px)
+  and (max-device-width : 1280px)
+  and (-webkit-min-device-pixel-ratio : 1.5)
+  and (orientation : landscape) {
+    @rules();
+  }
+
+}

@@ -1,0 +1,12 @@
+@import 'kindle-fire-7-inch';
+@import 'kindle-fire-8-point-9-inch';
+
+.kindleFireTablets(@rules) {
+  .kindleFire7Inch(@rules);
+  .kindleFire8Point9Inch(@rules);
+}
+
+.kindleFireTablets(@rules, @orientation) {
+  .kindleFire7Inch(@rules, @orientation);
+  .kindleFire8Point9Inch(@rules, @orientation);
+}

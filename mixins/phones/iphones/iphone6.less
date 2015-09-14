@@ -1,0 +1,38 @@
+/* ----------- iPhone 6 ----------- */
+.iPhone6(@rules) {
+
+  /* Portrait and Landscape */
+  @media only screen
+  and (min-device-width : 375px)
+  and (max-device-width : 667px)
+  and (-webkit-min-device-pixel-ratio : 2) {
+    @rules();
+  }
+
+}
+
+.iPhone6(@rules, @orientation) when (@orientation = portrait) {
+
+  /* Portrait */
+  @media only screen
+  and (min-device-width : 375px)
+  and (max-device-width : 667px)
+  and (-webkit-min-device-pixel-ratio : 2)
+  and (orientation : portrait) {
+    @rules();
+  }
+
+}
+
+.iPhone6(@rules, @orientation) when (@orientation = landscape) {
+
+  /* Landscape */
+  @media only screen
+  and (min-device-width : 375px)
+  and (max-device-width : 667px)
+  and (-webkit-min-device-pixel-ratio : 2)
+  and (orientation : landscape) {
+    @rules();
+  }
+
+}
