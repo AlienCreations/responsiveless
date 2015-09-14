@@ -1,0 +1,11 @@
+@import 'apple/apple-watch';
+@import 'moto/moto-360-watch';
+
+.watches(@rules) {
+  .appleWatch(@rules);
+  .moto360Watch(@rules);
+}
+
+.wearables(@rules) {
+  .watches(@rules);
+}

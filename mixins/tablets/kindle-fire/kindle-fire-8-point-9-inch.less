@@ -1,0 +1,38 @@
+/* ----------- Kindle Fire HD 8.9" ----------- */
+.kindleFire8Point9Inch(@rules) {
+
+  /* Portrait and Landscape */
+  @media only screen
+  and (min-device-width : 1200px)
+  and (max-device-width : 1600px)
+  and (-webkit-min-device-pixel-ratio : 1.5) {
+    @rules();
+  }
+
+}
+
+.kindleFire8Point9Inch(@rules, @orientation) when (@orientation = portrait) {
+
+  /* Portrait */
+  @media only screen
+  and (min-device-width : 1200px)
+  and (max-device-width : 1600px)
+  and (-webkit-min-device-pixel-ratio : 1.5)
+  and (orientation : portrait) {
+    @rules();
+  }
+
+}
+
+.kindleFire8Point9Inch(@rules, @orientation) when (@orientation = landscape) {
+
+  /* Landscape */
+  @media only screen
+  and (min-device-width : 1200px)
+  and (max-device-width : 1600px)
+  and (-webkit-min-device-pixel-ratio : 1.5)
+  and (orientation : landscape) {
+    @rules();
+  }
+
+}

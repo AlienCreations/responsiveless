@@ -1,0 +1,15 @@
+@import 'galaxy-s3';
+@import 'galaxy-s4';
+@import 'galaxy-s5';
+
+.galaxyPhones(@rules) {
+  .galaxyS3(@rules);
+  .galaxyS4(@rules);
+  .galaxyS5(@rules);
+}
+
+.galaxyPhones(@rules, @orientation) {
+  .galaxyS3(@rules, @orientation);
+  .galaxyS4(@rules, @orientation);
+  .galaxyS5(@rules, @orientation);
+}

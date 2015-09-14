@@ -1,0 +1,41 @@
+/* ----------- Asus Nexus 7 ----------- */
+.asusNexus7(@rules) {
+
+  /* Portrait and Landscape */
+  @media screen
+  and (device-width : 601px)
+  and (device-height : 906px)
+  and (-webkit-min-device-pixel-ratio : 1.331)
+  and (-webkit-max-device-pixel-ratio : 1.332) {
+    @rules();
+  }
+
+}
+
+.asusNexus7(@rules, @orientation) when (@orientation = portrait) {
+
+  /* Portrait */
+  @media screen
+  and (device-width : 601px)
+  and (device-height : 906px)
+  and (-webkit-min-device-pixel-ratio : 1.331)
+  and (-webkit-max-device-pixel-ratio : 1.332)
+  and (orientation : portrait) {
+    @rules();
+  }
+
+}
+
+.asusNexus7(@rules, @orientation) when (@orientation = landscape) {
+
+  /* Landscape */
+  @media screen
+  and (device-width : 601px)
+  and (device-height : 906px)
+  and (-webkit-min-device-pixel-ratio : 1.331)
+  and (-webkit-max-device-pixel-ratio : 1.332)
+  and (orientation : landscape) {
+    @rules();
+  }
+
+}

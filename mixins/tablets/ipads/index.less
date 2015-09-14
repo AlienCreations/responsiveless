@@ -1,0 +1,15 @@
+@import 'ipad-1st-gen';
+@import 'ipad-2nd-gen';
+@import 'ipad-mini';
+
+.iPads(@rules) {
+  .iPad1stGen(@rules);
+  .iPad2ndGen(@rules);
+  .iPadMini(@rules);
+}
+
+.iPads(@rules, @orientation) {
+  .iPad1stGen(@rules, @orientation);
+  .iPad2ndGen(@rules, @orientation);
+  .iPadMini(@rules, @orientation);
+}

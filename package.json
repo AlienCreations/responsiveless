@@ -1,0 +1,26 @@
+{
+  "name"        : "responsiveless",
+  "version"     : "1.0.1",
+  "description" : "Media query mixins for LESS",
+  "main"        : "index.less",
+  "scripts"     : {
+    "test" : "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository"  : {
+    "type" : "git",
+    "url"  : "git+https://github.com/aliencreations/responsiveless.git"
+  },
+  "keywords"    : [
+    "responsive",
+    "less",
+    "media",
+    "query",
+    "mixin"
+  ],
+  "author"      : "Sean Cannon (alienwebguy@gmail.com)",
+  "license"     : "MIT",
+  "bugs"        : {
+    "url" : "https://github.com/aliencreations/responsiveless/issues"
+  },
+  "homepage"    : "https://github.com/aliencreations/responsiveless#readme"
+}

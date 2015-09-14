@@ -1,0 +1,18 @@
+@import 'galaxy/index';
+@import 'ipads/index';
+@import 'kindle-fire/index';
+@import 'nexus/index';
+
+.tablets(@rules) {
+  .galaxyTablets(@rules);
+  .iPads(@rules);
+  .kindleFireTablets(@rules);
+  .nexusTablets(@rules);
+}
+
+.tablets(@rules, @orientation) {
+  .galaxyTablets(@rules, @orientation);
+  .iPads(@rules, @orientation);
+  .kindleFireTablets(@rules, @orientation);
+  .nexusTablets(@rules, @orientation);
+}

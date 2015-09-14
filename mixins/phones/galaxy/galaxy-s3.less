@@ -1,0 +1,38 @@
+/* ----------- Galaxy S3 ----------- */
+.galaxyS3(@rules) {
+
+  /* Portrait and Landscape */
+  @media screen
+  and (device-width : 320px)
+  and (device-height : 640px)
+  and (-webkit-device-pixel-ratio : 2) {
+    @rules();
+  }
+
+}
+
+.galaxyS3(@rules, @orientation) when (@orientation = portrait) {
+
+  /* Portrait */
+  @media screen
+  and (device-width : 320px)
+  and (device-height : 640px)
+  and (-webkit-device-pixel-ratio : 2)
+  and (orientation : portrait) {
+    @rules();
+  }
+
+}
+
+.galaxyS3(@rules, @orientation) when (@orientation = landscape) {
+
+  /* Landscape */
+  @media screen
+  and (device-width : 320px)
+  and (device-height : 640px)
+  and (-webkit-device-pixel-ratio : 2)
+  and (orientation : landscape) {
+    @rules();
+  }
+
+}

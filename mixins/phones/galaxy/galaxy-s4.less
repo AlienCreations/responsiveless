@@ -1,0 +1,38 @@
+/* ----------- Galaxy S4 ----------- */
+.galaxyS4(@rules) {
+
+  /* Portrait and Landscape */
+  @media screen
+  and (device-width : 320px)
+  and (device-height : 640px)
+  and (-webkit-device-pixel-ratio : 3) {
+    @rules();
+  }
+
+}
+
+.galaxyS4(@rules, @orientation) when (@orientation = portrait) {
+
+  /* Portrait */
+  @media screen
+  and (device-width : 320px)
+  and (device-height : 640px)
+  and (-webkit-device-pixel-ratio : 3)
+  and (orientation : portrait) {
+    @rules();
+  }
+
+}
+
+.galaxyS4(@rules, @orientation) when (@orientation = landscape) {
+
+  /* Landscape */
+  @media screen
+  and (device-width : 320px)
+  and (device-height : 640px)
+  and (-webkit-device-pixel-ratio : 3)
+  and (orientation : landscape) {
+    @rules();
+  }
+
+}
